@@ -1,3 +1,4 @@
+/*All configs*/
 * {
     font-family: poppins;
 }
@@ -11,9 +12,10 @@ html, body {
 
 /*Main - Welcome*/
 main {
-    background-image: var(--HaskBG);
     width: 100%;
     height: 50vw;
+
+    background-image: var(--HaskBG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,13 +24,12 @@ main {
 }
 .bold-hask {
     font-family: Satisfy;
-    font-size: 60vh;
-    font-size: 30vw;
+    font-size: 25vw;
     font-style: normal;
     font-weight: normal;
     text-align: center;
 
-    padding-top: 13%;
+    padding-top: 13vw;
 
     line-height: 30vh;
     height: 40%;
@@ -45,7 +46,7 @@ main {
 
 .light-hask {
     font-family: Satisfy;
-    font-size: 20vh;
+    font-size: 12vw;
     font-style: normal;
     font-weight: normal;
     margin-left: -3.5%;
@@ -57,7 +58,7 @@ main {
 
 .welcome-hask {
     font-family: poppins;
-    font-size: 2em;
+    font-size: 2.3vw;
     font-style: bold;
     font-weight: bold;
     
@@ -82,8 +83,8 @@ main {
     border: none;
     border-radius: 5px;
     
-    padding: 10px;
-    margin: 10px;
+    padding: 1vh;
+    margin: 1vw;
 
     background-color: white;
     color: black;
@@ -102,26 +103,33 @@ main {
 
     box-shadow: 4px 3px #bbbbbb;
   }
-  /*Lines*/
+
+/*Text - Messages*/
+/*Line*/
 hr {
     background: var(--bg);
+
     width: 40%;
     height: 0.3%;
+
     border: none;
     border-radius: 15px;
+
     transition: all 0.4s ease;
   }
+.h {
+    color: var(--bg); 
 
-.body {
-    text-align: center;
+    font-family: satisfy; 
+    font-size: 20vh; 
+    font-weight: lighter; 
 
-    font-family: poppins;
-  }
+    margin: 0px;
+}
 .text-h {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 .text-g
   {
@@ -148,54 +156,158 @@ hr {
 
     transition: all 0.4s ease;
   }
-  
-  
-  /*Table*/
-  th, td {
-    border: 1px solid var(--bg);
-    border-width: 0 0 1px;
-    padding: 0.5%;
-    vertical-align: top;
-  }
-
-  
-
 .focus:hover{
-  position: relative;
-  bottom: 5px;
-  
-  text-shadow: 0px 4px 4px #5a5a5a;
-  
-  transition: all 0.2s ease;
+    position: relative;
+    bottom: 5px;
+    
+    text-shadow: 0px 4px 4px #5a5a5a;
+    
+    transition: all 0.2s ease;
 }
 .tittle {
-  font-size: 3.5em;
+    font-size: 3.5em;
 }
 .sub-tittle {
-  font-size: 2.5em;
-  margin: 0px;
+    font-size: 2.5em;
+    margin: 0px;
 }
 .text {
-  font-size: 2em; 
-  width: 80%; 
-  margin-left: 2%;
+    font-size: 2em; 
+
+    width: 80%; 
+    margin-left: 2%;
 }
 .text-sub {
-  font-size: 1.5em; 
-  width: 45%;
+    font-size: 1.5em; 
+
+    width: 45%;
 }
-.h {
-  color: var(--bg); 
-  font-family: satisfy; 
-  font-size: 20vh; font-weight: 
-  lighter; 
+  
+
+
+
+
+
+
+.register {
+  color: var(--inv);
+}
+
+.input-login {
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  border: none;
+  outline: 2px solid black;
+  
+  padding: 2%;
+
+  font-size: 3vh;
+
+  width: 40%;
+  height: 10%;
+  
+  text-align: center;
+}
+.input-login:hover {
+  outline: aquamarine 3px solid;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;  
+  background-color: var(--bg);
+  color: white;
+}
+
+.modal-footer {
+
+  width: 100%;
+  padding: 10px;
+
+  background-color: var(--bg);
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.item {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputSubmit {
+  background-color: palegreen;
   margin: 0px;
+  width: 25%;
 }
-.update-title {
-  font-size: 2em; 
-  margin: 0px; 
-  padding-top: 5%; 
-}
-.update {
-  font-size: 1.5vw; 
+.inputSubmit:hover {
+  color: white;
+  background-color: #ff725e;
 }

@@ -1,3 +1,45 @@
+/*All configs*/
+* {
+  font-family: poppins;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+.btn {
+  font-family: poppins;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 1.3em;
+
+  text-decoration: none;
+
+  border: none;
+  border-radius: 5px;
+  
+  padding: 1vh;
+  margin: 1vw;
+
+  background-color: white;
+  color: black;
+
+  transition: all 0.4s ease;
+  animation: fadeLeft 1s;
+}
+.btn:hover {
+  position: relative;
+  
+  background-color: var(--btn);
+
+  transition: 0.5s;
+  
+  bottom: 1px;
+
+  box-shadow: 4px 3px #bbbbbb;
+}
 /*Commands*/
 .container .topic{
     font-size: 30px;
@@ -115,7 +157,13 @@
     margin: 0px; 
     padding-top: 8%;
   }
-  
+  th, td {
+    border: 1px solid var(--bg);
+    border-width: 0 0 1px;
+    padding: 0.5%;
+    vertical-align: top;
+  }
+
 
 
   /*List*/

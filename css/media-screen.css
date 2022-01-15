@@ -1,105 +1,101 @@
 /*NavBar*/
 @media (max-width: 786px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-  }
-
-  nav ul {
-    max-height: 0px;
-    background: var(--bg);
-  }
-
-  nav.black ul {
-    background: var(--bg);
-  }
-
-  .showing {
-    max-height: 34em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px;
-    text-align: center;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-  .switch {
-    margin-right: 43%;
-    margin-top: 8%;
-  }
-}
-
-@media (max-width: 1050px) {
-  main {
-    height: 80vh;
-  }
-  .update {
-    font-size: 2.5vw; 
-  }
-  .update-title {
-    padding-top: 10%;
-  }
-}
-@media (max-width: 830px) {
-  .text {
-    font-size: 1.2em; 
-    width: 80%; 
-    margin-left: 2%;
-  }
-  .h {
-    display: none;
-  }
-  #img-hask {
-    display: none;
-  }
-}
-
-  /*Mobile*/
-  @media (max-width: 495px) {
+    .logo {
+      position: fixed;
+      top: 0;
+      margin-top: 16px;
+    }
+  
+    nav ul {
+      max-height: 0px;
+      background: var(--bg);
+    }
+  
+    nav.black ul {
+      background: var(--bg);
+    }
+  
+    .showing {
+      max-height: 34em;
+    }
+  
+    nav ul li {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+    }
+  
     .menu-icon {
-      width: 100%;
+      display: block;
     }
-    nav {
-      width: 100%;
+    .switch {
+      margin-right: 43%;
+      margin-top: 8%;
     }
-    .light-hask {
-      display: none;
-    }
-    .box-gif{
-      width: 100%;
-      height: 100%;
-    }
-    .tittle, .sub-tittle{
-      font-size: 10vw;
-    }
-    .text-sub {
-      font-size: 1.5em; 
-      width: 100%; 
-      margin-left: 2%;
-    }
-    .btn {
-      font-size: 1em;
-    }
-    .bold-hask{
-      padding-top: 100px;
-      font-size: 50vw;
+  }
+  @media (max-width: 1050px) {
+    main {
+      height: 80vh;
     }
     .update {
-      font-size: 3.5vw; 
+      font-size: 2.5vw; 
     }
     .update-title {
-      padding-top: 20%;
+      padding-top: 10%;
     }
   }
-  @media (max-width: 320px) {
-    .bold-hask{
-      padding-top: 70px;
-      font-size: 50vw;
+  @media (max-width: 830px) {
+    .text {
+      font-size: 1.2em; 
+      width: 80%; 
+      margin-left: 2%;
+    }
+    .h {
+      display: none;
+    }
+    #img-hask {
+      display: none;
     }
   }
+  
+    /*Mobile*/
+    @media (max-width: 650px) {
+      .menu-icon {
+        width: 100%;
+      }
+      nav {
+        width: 100%;
+      }
+      .box-gif{
+        width: 100%;
+        height: 100%;
+      }
+      .tittle, .sub-tittle{
+        font-size: 10vw;
+      }
+      .text-sub {
+        font-size: 1.5em; 
+        width: 100%; 
+        margin-left: 2%;
+      }
+      .update {
+        font-size: 3.5vw; 
+      }
+      .update-title {
+        padding-top: 20%;
+      }
+      .light-hask {
+        display: none;
+      }
+      .bold-hask {
+        padding-top: 15vh;
+        font-size: 35vw;
+      }
+      .welcome-hask {
+        font-size: 5vw;
+      }
+    }
+    @media (max-width: 320px) {
+    }
+  

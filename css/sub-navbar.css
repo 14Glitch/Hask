@@ -1,3 +1,7 @@
+header
+{
+    height: 5em;
+}
 .content {
     width: 94%;
     margin: 4em auto;
@@ -6,10 +10,10 @@
     text-align: justify;
   }
   
-  .logo {
+.logo {
     line-height: 35px;
     text-decoration: none;
-    position: fixed;
+    position: absolute;
     float: left;
     margin: 16px 46px;
     color: #fff;
@@ -19,17 +23,18 @@
     font-weight: lighter;
 
     text-shadow: 0px 4px 4px #000000;
-  }
-  nav {
-    position: fixed;
+}
+nav {
+    position: absolute;
     width: 100%;
-    height: 8%;
+    height: 5em;
     font-family: poppins;
     font-weight: bold;
     z-index: 999;
-  }
+    background-color: var(--bg);
+}
   
-  nav ul {
+nav ul {
     line-height: 30px;
     list-style: none;
     background: rgba(0, 0, 0, 0);
@@ -39,32 +44,25 @@
     text-align: center;
     margin: 0;
     padding-left: 10%;
-  }
+}
   
-  nav.black ul {
-    transition: all 1s ease;
-    background-size: 100% 100%;
-    background-color: var(--bg);
-  }
-  
-  nav ul li {
+nav ul li {
     display: inline-block;
     padding: 16px 1%;
     text-shadow: 0px 4px 4px #000000;
-  }
-  nav ul li .fas {
+}
+nav ul li .fas {
     padding: 5px;
     color: white;
-  }
+}
   
-  nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-  }
+}
   
-  
-  .menu-icon {
+.menu-icon {
     line-height: 60px;
     width: 100%;
     background: var(--bg);
@@ -74,8 +72,9 @@
     cursor: pointer;
     color: #fff;
     display: none;
-  }
-  .login-btn {
+}
+
+.login-btn {
     float: right;
     font-family: poppins;
     font-style: bold;
@@ -96,8 +95,9 @@
 
     transition: all 0.4s ease;
     animation: fadeLeft 1s;
-  }
-  .login-btn:hover {
+}
+
+.login-btn:hover {
     position: relative;
     
     background-color: var(--btn);
@@ -107,28 +107,27 @@
     bottom: 1px;
 
     box-shadow: 4px 3px #bbbbbb;
-  }
+}
   
 /*Switch*/
 .switch {
     position: relative;
     width: 60px;
     height: 34px;
-    bottom: 20px;
     float: right;
 
     right: 2%;
 
-    margin-top: 2%;
-  }
+    margin-top: 1.5%;
+}
   
-  .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -138,9 +137,9 @@
     background-color: var(--bg);
     outline: white 2px solid;
     transition: 0.4s;
-  }
+}
   
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -149,29 +148,29 @@
     bottom: 4px;
     background-color: white;
     transition: 0.4s;
-  }
+}
   
-  input:checked + .slider {
+input:checked + .slider {
     background-color: var(--bg);
-  }
+}
   
-  input:focus + .slider {
+input:focus + .slider {
     box-shadow: 0 0 1px var(--bg);
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+}
   
-  .slider.round {
+.slider.round {
     border-radius: 34px;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
   
   
   

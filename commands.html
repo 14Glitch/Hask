@@ -1,60 +1,58 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hask</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/navbar-sub.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/animation.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/commands.css">
-  <link rel="stylesheet" href="./css/colors.css">
-  <link rel="stylesheet" href="./css/direction.css">
-  <link rel="stylesheet" href="./css/media-screen.css">
-  <!-- FONTS -->
-  <link rel="stylesheet" href="./css/fonts.css">
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
- <!-- ICONS -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
- <!-- JS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+    <meta name="description" content="Hask, um novo bot para fazer seu servidor do Discord um lugar melhor, onde possa ter moderação controlada e diverção.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/commands.css">
+    <link rel="stylesheet" href="../css/sub-navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/media-screen.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../css/fonts.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <body onselectstart="return false" ondragstart="return false;">
   <div id="preloader">
      <div class="inner">
-        <img src="./images/preloader.gif" style="height: 128px; width: 128px;">                
+        <img src="../img/preloader.gif" style="height: 128px; width: 128px;">                
         </div>
      </div>
   </div>
     <!-- NavBar -->
-    <header>
+     <header>
         <nav>
             <div class="menu-icon">
-               <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-bars fa-2x"></i>
             </div>
             <a href="index.html" class="logo">H</a>
             <div class="menu">
-               <ul>
-                  <li><i class="fas fa-home fa-lg"></i><a href="index.html">Home</a></li>
-                  <li>
-                     <i class="fas fa-terminal fa-lg"></i><a href="commands.html">Comandos</a>
-                  </li>
-                  <li>
-                     <i class="fas fa-book fa-lg"></i></i><a href="notes.html">Notas</a>
-                  </li>
-                  <label class="switch">
-                    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle"/>
-                    <span class="slider round" id="switch"></span>
-                 </label>
-               </ul>
+                <ul>
+                    <li><i class="fas fa-home fa-lg"></i><a href="index.html">Home</a></li>
+                    <li>
+                        <i class="fas fa-terminal fa-lg"></i><a href="commands.html">Comandos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-book fa-lg"></i></i><a href="notes.html">Notas</a>
+                    </li>
+                    <label class="switch">
+                     <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle"/>
+                     <div class="slider round" id="switch"></div>
+                  </label>
+                </ul>
             </div>
-         </nav>
+        </nav>
     </header>
     <!-- Body -->
     <h1 class="text-center commands">Comandos</h1>
@@ -320,7 +318,7 @@
  </footer>
 </body>
    <!-- JS -->
-   <script src="./js/navbar.js"></script>
-   <script src="./js/preloader.js"></script>
-   <script src="./js/switch.js"></script>
+   <script src="../js/navbar.js"></script>
+   <script src="../js/preloader.js"></script>
+   <script src="../js/switch.js"></script>
 </html>
