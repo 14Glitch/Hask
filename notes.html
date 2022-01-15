@@ -1,0 +1,96 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualização</title>
+ <!-- CSS -->
+ <link rel="stylesheet" href="./css/navbar-sub.css">
+ <link rel="stylesheet" href="./css/footer.css">
+ <link rel="stylesheet" href="./css/animation.css">
+ <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="./css/colors.css">
+ <link rel="stylesheet" href="./css/direction.css">
+ <link rel="stylesheet" href="./css/media-screen.css">
+   <!-- FONTS -->
+   <link rel="stylesheet" href="/css/fonts.css">
+   <!-- FAVICON -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onselectstart="return false" ondragstart="return false;">
+   <div id="preloader">
+      <div class="inner">
+         <img src="./images/preloader.gif" style="height: 128px; width: 128px;">                
+         </div>
+      </div>
+   </div>
+    <!-- NavBar -->
+    <header>
+        <nav>
+            <div class="menu-icon">
+               <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <a href="index.html" class="logo">H</a>
+            <div class="menu">
+               <ul>
+                  <li><i class="fas fa-home fa-lg"></i><a href="index.html">Home</a></li>
+                  <li>
+                     <i class="fas fa-terminal fa-lg"></i><a href="commands.html">Comandos</a>
+                  </li>
+                  <li>
+                     <i class="fas fa-book fa-lg"></i></i><a href="notes.html">Notas</a>
+                  </li>
+                  <label class="switch">
+                     <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle"/>
+                     <span class="slider round" id="switch"></span>
+                  </label>
+               </ul>
+            </div>
+         </nav>
+    </header>
+    <!-- Body -->
+    <h1 class="text-center update-title">Notas de atualizações</h1>
+    <hr style="background: var(--bg);
+    width: 30%;
+    opacity: 1;">
+    <h2 class="text-center">Atualização v0.1</h2>
+    <section
+    style="height: 40%; text-align: center; font-weight: bold; font-size: 2em;">
+    <p>Ultimas atualizações!</p>
+    <div class="update">
+    <ul>
+       <li>Repaginação no site.</li>
+       <li>Reajuste nos comandos do Minecraft.</li>
+    </ul>
+   </div>
+</section>
+         <!-- Footer -->
+         <footer>
+            <div class="footer-top">
+            <h1 style="margin-bottom: 0px;">Hask</h1>
+            <p>Comece um novo servidor comigo, iremos longe juntos!
+               <br>
+               Hask - O melhor bot para seu servidor!
+            </p>
+            <div class="social">
+               <a href="mailto: ajuda@hask.net.br"><i class="fas fa-envelope-open-text fa-2x"></i></a>
+               -
+               <a href="https://discord.gg/fS4xkpa2gM"><i class="fab fa-discord fa-2x"></i></a>
+               -
+               <a href="https://twitter.com/bot_Hask"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+         </div>
+         <p style="padding-top: 1%;">&copy 2021 Hask. Todos os direitos reservados.</p>
+         </footer>
+</body>
+   <!-- JS -->
+   <script src="./js/navbar.js"></script>
+   <script src="./js/preloader.js"></script>
+   <script src="./js/switch.js"></script>
+</html>

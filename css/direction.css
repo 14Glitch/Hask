@@ -1,0 +1,14 @@
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: start;
+}
+.text-end {
+    text-align: end;
+}
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

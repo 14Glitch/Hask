@@ -1,0 +1,145 @@
+/*Commands*/
+.container .topic{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin: 4em auto;
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .content .list{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 50px;
+    position: relative;
+  }
+  .content .list label{
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    color: #333;
+    z-index: 12;
+  }
+  #all:checked ~ .list label.all,
+  #info:checked ~ .list label.info,
+  #mod:checked ~ .list label.mod,
+  #music:checked ~ .list label.music,
+  #fun:checked ~ .list label.fun{
+    color: #fff;
+  }
+  .content .list label:hover{
+    color: var(--bg);
+  }
+  .content .slidertabs{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 80%;
+    border-radius: 12px;
+    background: var(--bg);
+    transition: all 0.4s ease;
+  }
+  #all:checked ~ .list .slidertabs{
+    top: 0;
+  }
+  #info:checked ~ .list .slidertabs{
+    top: 60px;
+  }
+  #mod:checked ~ .list .slidertabs{
+    top: 120px;
+  }
+  #music:checked ~ .list .slidertabs{
+    top: 180px;
+  }
+  #fun:checked ~ .list .slidertabs{
+    top: 240px;
+  }
+  .content .text-content{
+    width: 80%;
+    height: 100%;
+  }
+  .content .text{
+    display: none;
+  }
+  .content .text .title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .content .text p{
+    text-align: justify;
+  }
+  .content .text-content .all{
+    display: block;
+  }
+  #all:checked ~ .text-content .all,
+  #info:checked ~ .text-content .info,
+  #mod:checked ~ .text-content .mod,
+  #music:checked ~ .text-content .music,
+  #fun:checked ~ .text-content .fun{
+    display: block;
+  }
+  
+  #info:checked ~ .text-content .all,
+  #mod:checked ~ .text-content .all,
+  #music:checked ~ .text-content .all,
+  #fun:checked ~ .text-content .all{
+    display: none;
+  }
+  .content input{
+    display: none;
+  }
+  .fun
+  {
+    display: flex;
+    flex-direction: row;
+    display: block;
+  }
+  .commands {
+    font-size: 60px; 
+    margin: 0px; 
+    padding-top: 8%;
+  }
+  
+
+
+  /*List*/
+@media (max-width: 786px) {
+  span{
+    display: none;
+  }
+  .fun {
+    display: none;
+  }
+  .slidertabs {
+    display: none;
+  }
+  .content {
+    margin: 0 0;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    margin-left: -5%;
+    padding-left: -10%;
+  }
+  .commands {
+    padding-top: 20%;
+  }
+}

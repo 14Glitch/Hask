@@ -1,0 +1,20 @@
+/*Color Red*/
+:root {
+    --bg: #f04747; 
+    --white: #fff;
+    --HaskBG: url("../images/background-red.jpg");
+    --btn: #eb5555;
+    --btn-hover: #e72222;
+    --text: #f04747;
+    --bg-gradiente: linear-gradient(45deg, #ff0000, #950101, #3d0000, #000000);
+  }
+  /*Color Blue*/
+  .darkmode {
+    --bg: #57c3e7;
+    --HaskBG: url("../images/background-blue.jpg");
+    --text: #57c3e7;
+    --white: #fff;
+    --btn: #5da2f1;
+    --btn-hover: #3089f0;
+    --bg-gradiente: linear-gradient(45deg, #020202, #1597e5, #113cfc, #193498);
+  }

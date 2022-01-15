@@ -1,0 +1,326 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hask</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/navbar-sub.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/commands.css">
+  <link rel="stylesheet" href="./css/colors.css">
+  <link rel="stylesheet" href="./css/direction.css">
+  <link rel="stylesheet" href="./css/media-screen.css">
+  <!-- FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <!-- ICONS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+ <!-- JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onselectstart="return false" ondragstart="return false;">
+  <div id="preloader">
+     <div class="inner">
+        <img src="./images/preloader.gif" style="height: 128px; width: 128px;">                
+        </div>
+     </div>
+  </div>
+    <!-- NavBar -->
+    <header>
+        <nav>
+            <div class="menu-icon">
+               <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <a href="index.html" class="logo">H</a>
+            <div class="menu">
+               <ul>
+                  <li><i class="fas fa-home fa-lg"></i><a href="index.html">Home</a></li>
+                  <li>
+                     <i class="fas fa-terminal fa-lg"></i><a href="commands.html">Comandos</a>
+                  </li>
+                  <li>
+                     <i class="fas fa-book fa-lg"></i></i><a href="notes.html">Notas</a>
+                  </li>
+                  <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle"/>
+                    <span class="slider round" id="switch"></span>
+                 </label>
+               </ul>
+            </div>
+         </nav>
+    </header>
+    <!-- Body -->
+    <h1 class="text-center commands">Comandos</h1>
+    <hr style="background: var(--bg);
+    width: 20%;
+    height: 0.3%;
+    border-radius: 15px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    opacity: 1;">
+    <h2 class="text-center">Comandos gerais</h2>
+    <section>
+        <div class="container">
+            <div class="content">
+              <input type="radio" name="slidertabs" checked id="all">
+              <input type="radio" name="slidertabs" id="info">
+              <input type="radio" name="slidertabs" id="mod">
+              <input type="radio" name="slidertabs" id="music">
+              <input type="radio" name="slidertabs" id="fun">
+              <div class="list">
+                <label for="all" class="all">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                <span class="title">Todos</span>
+              </label>
+              <label for="info" class="info">
+                <span class="icon"><i class="fas fa-info"></i>
+                <span class="title">Infos</span>
+              </label>
+              <label for="mod" class="mod">
+                <span class="icon"><i class="fas fa-user-shield"></i></span>
+                <span class="title">Adm</span>
+              </label>
+              <label for="music" class="music">
+                <span class="icon"><i class="fas fa-play-circle"></i></span>
+                <span class="title">Música</span>
+              </label>
+              <label for="fun" class="fun">
+                <span class="icon"><i class="fas fa-laugh-beam"></i></span>
+                <span class="title">Diversão</span>
+              </label>
+              <div class="slidertabs"></div>
+            </div>
+              <div class="text-content">
+                <div class="all text">
+                  <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Comando</th>
+                            <th style="width: 85%; text-align: start;">Descrição</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <th>/ping</th>
+                            <td>Pinga o bot e mostra a latência, usada para verificar a rapidez com que o bot se conecta à
+                                discórdia. Pings mais altos geralmente indicam que pode haver atraso.</td>
+                        </tr>
+                        <tr>
+                            <th>/mchead</th>
+                            <td>Irá resgatar o avatar do jogador escolhido por você.</td>
+                        </tr>
+                        <tr>
+                            <th>/mcface</th>
+                            <td>Irá resgatar o rosto do jogador escolhido por você.</td>
+                        </tr>
+                        <tr>
+                            <th>/mcbody</th>
+                            <td>Irá resgatar o corpo do jogador escolhido por você.</td>
+                        </tr>
+                        <tr>
+                            <th>/botinfo</th>
+                            <td>Quer ver quando eu fui criado, meu id e muito mais? Você verá por aqui.</td>
+                        </tr>
+                        <tr>
+                            <th>/userinfo</th>
+                            <td>Gostaria de ver as informações de algum usuário? Use este comando você conseguerá ver as
+                                informações dele, como data, id, etc...</td>
+                        </tr>
+                        <tr>
+                            <th>/serverinfo</th>
+                            <td>Todas as informações necessárias do servidor irá ser mostrada apartir deste comando.</td>
+                        </tr>
+                        <tr>
+                            <th>/play</th>
+                            <td>Irá iniciar a música desejada, basta colocar o link da música seguindo o exemplo. <code
+                                    style="font-weight: bolder; color: #ad7e17;">/play (link)</code>, assim irá inciar a música
+                                adicionada na parte do "link".</td>
+                        </tr>
+                        <tr>
+                            <th>/queue</th>
+                            <td>Irá mostrar as filas das músicas.</td>
+                        </tr>
+                        <tr>
+                            <th>/skip</th>
+                            <td>Irá pular a música desejada.</td>
+                        </tr>
+                        <tr>
+                            <th>/pause</th>
+                            <td>Irá pular a música desejada.</td>
+                        </tr>
+                        <tr>
+                            <th>/resume</th>
+                            <td>Irá despausar a música desejada.</td>
+                        </tr>
+                        <tr>
+                            <th>/falar</th>
+                            <td>Você pode usar o bot para falar o que quiser.</td>
+                        </tr>
+                        <tr>
+                            <th>/ban</th>
+                            <td>Quando alguém quebrar a regra você poderá usar isto.</td>
+                        </tr>
+                        <tr>
+                            <th>/mute</th>
+                            <td>Falando até demais? Deixa ele um tempinho de castigo.</td>
+                        </tr>
+                        <tr>
+                            <th>/kick</th>
+                            <td>Caso queira chutar alguém do servidor, pode ficar a vonte.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="info text">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 15%;">Comando</th>
+                                <th style="width: 85%; text-align: start;">Descrição</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr>
+                                <th>/botinfo</th>
+                                <td>Quer ver quando eu fui criado, meu id e muito mais? Você verá por aqui.</td>
+                            </tr>
+                            <tr>
+                                <th>/userinfo</th>
+                                <td>Gostaria de ver as informações de algum usuário? Use este comando você conseguerá ver as
+                                    informações dele, como data, id, etc...</td>
+                            </tr>
+                            <tr>
+                                <th>/serverinfo</th>
+                                <td>Todas as informações necessárias do servidor irá ser mostrada apartir deste comando.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mod text">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 15%;">Comando</th>
+                                <th style="width: 85%; text-align: start;">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>/falar</th>
+                                <td>Você pode usar o bot para falar o que quiser, desde que você tenha a permissão necessária.</td>
+                            </tr>
+                            <tr>
+                                <th>/ban</th>
+                                <td>Quando alguém quebrar a regra você poderá usar isto, desde que você tenha a permissão necessária, este tipo de punição é mais seria, tome cuidado ao usa-lá.</td>
+                            </tr>
+                            <tr>
+                                <th>/mute</th>
+                                <td>Falando até demais? Deixa ele um tempinho de castigo, lembre-se que ele não irá falar pelo tempo determinado por você.</td>
+                            </tr>
+                            <tr>
+                                <th>/kick</th>
+                                <td>Caso queira chutar alguém do servidor, pode ficar a vonte.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="music text">
+                  <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Comando</th>
+                            <th style="width: 85%; text-align: start;">Descrição</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <th>/play</th>
+                            <td>Irá iniciar a música desejada, basta colocar o link da música seguindo o exemplo. <code
+                                    style="font-weight: bolder; color: #ad7e17;">/play (link)</code>, assim irá inciar a música
+                                adicionada na parte do "link".</td>
+                        </tr>
+                        <tr>
+                            <th>/queue</th>
+                            <td>Irá mostrar as filas das músicas.</td>
+                        </tr>
+                        <tr>
+                            <th>/skip</th>
+                            <td>Irá pular a música desejada.</td>
+                        </tr>
+                        <tr>
+                            <th>/pause</th>
+                            <td>Irá pular a música desejada.</td>
+                        </tr>
+                        <tr>
+                            <th>/resume</th>
+                            <td>Irá despausar a música desejada.</td>
+                        </tr>  
+                    </tbody>
+                </table>
+                </div>
+                <div class="fun text">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 15%;">Comando</th>
+                                <th style="width: 85%; text-align: start;">Descrição</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr>
+                                <th>/mchead</th>
+                                <td>Irá resgatar o avatar do jogador escolhido por você, lembre-se de que o Minecraft do usuário tem que ser o original.</td>
+                            </tr>
+                            <tr>
+                                <th>/mcface</th>
+                                <td>Irá resgatar o rosto do jogador escolhido por você, lembre-se de que o Minecraft do usuário tem que ser o original.</td>
+                            </tr>
+                            <tr>
+                                <th>/mcbody</th>
+                                <td>Irá resgatar o corpo do jogador escolhido por você, lembre-se de que o Minecraft do usuário tem que ser o original.</td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+         <!-- Footer -->
+   <footer>
+    <div class="footer-top">
+    <h1 style="margin-bottom: 0px;">Hask</h1>
+    <p>Comece um novo servidor comigo, iremos longe juntos!
+       <br>
+       Hask - O melhor bot para seu servidor!
+    </p>
+    <div class="social">
+       <a href="mailto: ajuda@hask.net.br"><i class="fas fa-envelope-open-text fa-2x"></i></a>
+       -
+       <a href="https://discord.gg/fS4xkpa2gM"><i class="fab fa-discord fa-2x"></i></a>
+       -
+       <a href="https://twitter.com/bot_Hask"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+ </div>
+ <p style="padding-top: 1%;">&copy 2021 Hask. Todos os direitos reservados.</p>
+ </footer>
+</body>
+   <!-- JS -->
+   <script src="./js/navbar.js"></script>
+   <script src="./js/preloader.js"></script>
+   <script src="./js/switch.js"></script>
+</html>
